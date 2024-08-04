@@ -31,7 +31,10 @@ body {
 
 .container {
     display: flex;
-    flex: 1;
+    /* flex: 1; */  
+    flex-shrink: 1;   /*عنصر می‌تواند کوچک شود تا در صورت نیاز با دیگر عناصر جا بگیرد.*/
+    flex-grow: 1;   /*عنصر می‌تواند در جهت اصلی فلکس (معمولاً عرض) رشد کند و فضای باقیمانده را پر */
+    flex-basis: 0;  /*اندازه اولیه عنصر برای محاسبات فلکس از 0 شروع می‌شود و سپس با توجه به فضای باقیمانده و نسبت به "فلکس گرو" تغییر می کند تغییر می‌کند.*/
 }
 
 .sidebar {
@@ -71,7 +74,6 @@ body {
             rgba(0, 145, 55, 0.596), rgba(255, 255, 255, 0.808)),
         url('/assets/images/n1.jpg') fixed center;
     background-size: cover;
-    /* background-color: #fff; */
     padding: 30px;
     flex: 1;
     border-left: 1px solid #ddd;
