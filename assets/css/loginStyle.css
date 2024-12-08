@@ -124,5 +124,7 @@ button:hover {
 
     .main-content {
         border-left: none;
+        background:linear-gradient(45deg , rgba(0, 0, 0, 0.436) , rgba(255, 0, 0, 0.321)) , url(/assets/images/24.jpg);
+        color: black !important;
     }
 }
